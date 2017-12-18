@@ -2,6 +2,7 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Should I remove it? -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89355375-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -36,128 +37,123 @@
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
     <script type="text/javascript">
       var template = choice([
-        "Did you know that",
+        'Você sabia que',
         fork([
           choice([
-            'the',
-            fork(['fall', 'spring']),
-            'equinox',
+            'o equinócio de',
+            fork(['outono', 'primavera'])
           ]),
           choice([
-            'the',
-            fork(['winter', 'summer']),
-            fork(['solstice', 'olympics']),
+            fork(['o solstício', 'as olimpíadas']),
+            'de',
+            fork(['inverno', 'verão']),
           ]),
           choice([
-            'the',
-            fork(['earliest', 'latest']),
-            fork(['sunrise', 'sunset']),
+            'o',
+            fork(['nascer do sol', 'pôr do sol']),
+            fork(['mais cedo', 'mais tarde']),
           ]),
+          'o horário de verão',
           choice([
-            'daylight',
-            fork(['saving', 'savings']),
-            'time',
+            'o',
+            fork(['dia', 'ano']),
+            'bissexto',
           ]),
+          'a páscoa',
           choice([
-            'leap',
-            fork(['day', 'year']),
+            'a',
+            fork(['lua cheia', 'super lua', 'lua sangrenta'])
           ]),
-          'easter',
-          choice([
-            'the',
-            fork(['harvest', 'super', 'blood']),
-            'moon',
-          ]),
-          'toyota truck month',
-          'shark week',
+          'o mês do toyota truck',
+          'a semana dos tubarões',
         ]),
         fork([
           choice([
-            'happens',
-            fork(['earlier', 'later', 'at the wrong time']),
-            'every year',
+            'acontece',
+            fork(['mais cedo', 'mais tarde', 'na hora errada']),
+            'todo ano',
           ]),
           choice([
-            'drifts out of sync with the',
+            'fica fora de sincronização com',
             fork([
-              'sun',
-              'moon',
-              'zodiac',
+              'o sol',
+              'a lua',
+              'o zodíaco',
               choice([
-                fork(['gregorian', 'mayan', 'lunar', 'iphone']),
-                'calendar',
+                'o calendário',
+                fork(['gregoriano', 'maia', 'lunar', 'do iphone'])
               ]),
-              'atomic clock in colorado',
+              'o relógio atômico no colorado',
             ]),
           ]),
           choice([
-            'might',
-            fork(['not happen', 'happen twice']),
-            'this year',
+            'pode',
+            fork(['não acontecer', 'acontecer duas vezes']),
+            'nesse ano',
           ]),
         ]),
-        "because of",
+        'por causa',
         fork([
           choice([
-            'time zone legislation in',
-            fork(['indiana', 'arizona', 'russia']),
+            'da legislação de fusos horários',
+            fork(['em indiana', 'no arizona', 'na russia']),
           ]),
-          'a decree by the pope in the 1500s',
+          'de um decreto pelo papa por volta de 1500',
           choice([
+            'da',
             fork([
-              'precession',
-              'liberation',
-              'nutation',
-              'libation',
-              'eccentricity',
-              'obliquity',
+              'precessão',
+              'libertação',
+              'nutação',
+              'libação',
+              'excentricidade',
+              'obliquidade',
             ]),
-            'of the',
             fork([
-              'moon',
-              'sun',
-              "earth's axis",
-              'equator',
-              'prime meridian',
+              'da lua',
+              'do sol',
+              'do eixo da terra',
+              'do equador',
+              'do meridiano principal',
               choice([
-                fork(['international date', 'mason-dixon']),
-                'line',
+                'da linha'
+                fork(['internacional da data', 'de mason-dixon'])
               ]),
             ])
           ]),
-          'magnetic field reversal',
+          'da reversão do campo magnético',
           choice([
-            'an arbitrary decision by',
-            fork(['benjamin franklin', 'isaac newton', 'fdr']),
+            'de uma decisão arbritária',
+            fork(['por benjamin franklin', 'por isaac newton', 'pela fdr']),
           ]),
         ]),
-        "? apparently",
+        "? aparentemente",
         fork([
-          'it causes a predictable increase in car accidents.',
-          "that's why we have leap seconds.",
-          'scientists are really worried.',
+          'isso provoca um aumento previsível nos acidentes de carro.',
+          "é por isso que temos segundos bissextos.",
+          'os cientistas estão realmente preocupados.',
           choice([
-            'it was even more extreme during the',
-            fork(['bronze age.', 'ice age.', 'cretaceous.', '1990s.']),
+            'isso foi ainda mais extremo durante',
+            fork(['a era do bronze.', 'a era do gelo.', 'o cretáceo.', 'os anos 90.']),
           ]),
           choice([
-            "there's a proposal to fix it, but it",
+            'há uma proposta de correção, mas isso',
             fork([
-              'will never happen.',
-              'actually makes things worse.',
-              'is stalled in congress.',
-              'might be unconstitutional.',
+              'nunca irá acontecer.',
+              'na verdade só torna as coisas piores.',
+              'está parada no congresso.',
+              'pode ser inconstitucional.',
             ]),
           ]),
-          "it's getting worse and no one knows why.",
+          "está piorando e ninguém sabe o porquê.",
         ]),
-        'While it may seem like trivia, it',
+        'Embora possa parecer trivial isso',
         fork([
-          'causes huge headaches for software developers.',
-          'is taken advantage of by high-speed traders.',
-          'triggered the 2003 northeast blackout.',
-          'has to be corrected for by GPS satellites.',
-          'is now recognized as a major cause of world war I.',
+          'provoca enormes dores de cabeça para desenvolvedores de software.',
+          'é aproveitado pelos negociadores de alta velocidade.',
+          'desencadeou o blackout do nordeste dos EUA em 2003.',
+          'tem que ser corrigido pelos satélites GPS.',
+          'agora é reconhecido como uma das principais causas da primeira guerra mundial.',
         ]),
       ])
 
@@ -192,10 +188,11 @@
     </script>
   </head>
   <body>
-    <a href="https://xkcd.com/1930/">Source: xkcd</a>
+    <a href="https://xkcd.com/1930/">Fonte: xkcd</a>
+    <a href="https://staab.github.io/xkcd-1930/">Site original</a> (em inglês)
     &nbsp;
-    <button id="regen" onclick="regen()">Generate</button>
+    <button id="regen" onclick="regen()">Gerar</button>
     <div id="result"></div>
-    <a class="github-link" href="https://github.com/staab/xkcd-1930">View on GitHub</a>
+    <a class="github-link" href="https://github.com/staab/xkcd-1930">Ver em GitHub</a>
   </body>
 </html>
